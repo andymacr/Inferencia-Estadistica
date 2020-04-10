@@ -1,5 +1,6 @@
 
 ##Sesion 1 CsiData 
+#practica con encuesta 
 
 setwd("C:\\Users\\hp master\\Documents\\SciData\\Inferencia_Estadistica\\Enpecyt_2017")
 
