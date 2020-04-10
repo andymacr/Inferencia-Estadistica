@@ -1,3 +1,6 @@
+
+##Sesion 1 CsiData 
+
 setwd("C:\\Users\\hp master\\Documents\\SciData\\Inferencia_Estadistica\\Enpecyt_2017")
 
 install.packages("foreign")
@@ -11,7 +14,7 @@ read.dbf("enpecyt2017_cb1.dbf") -> cb1
 nivel_estudios <- tapply(cb1$FAC,cb1$S3P1,sum)
 
 niveles_estudios <- c("Ninguno","Preescolar","Primaria","Secundaria","Preparatoria","Normal","TSU","Licenciatura","Especialidad",
-          "Maestría","Doctorado")
+          "Maestr?a","Doctorado")
 
 nivel_estudios <- data.frame(niveles_estudios,nivel_estudios)
 names(nivel_estudios) <- c("grado","absoluto")
@@ -45,7 +48,7 @@ cb1[cb1$S3P1 %in% c(8,9,10),]$grupo <- 4
 
 grupo_estudios <- tapply(cb1$FAC,cb1$grupo,sum)
 
-grupos_estudios <- c("Ninguno","Básico","Medio superio","Superior","Posgrado")
+grupos_estudios <- c("Ninguno","B?sico","Medio superio","Superior","Posgrado")
 
 grupo_estudios <- data.frame(grupos_estudios,grupo_estudios)
 names(grupo_estudios) <- c("grado","absoluto")
